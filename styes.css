@@ -1,0 +1,30 @@
+.ramka {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 390px;
+    background-image: url('./soat-ramka-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.taym {
+    font-size: 40px;
+    text-align: center;
+    transform: translateY(150px);
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        color: white;
+        transform: translateY(-6px)
+    }
+}
+
+.haur, .mint, .sekond, .tochka {
+    display: inline-block;
+    animation: jump 1s ease-in-out infinite;
+}
